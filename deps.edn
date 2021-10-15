@@ -1,0 +1,10 @@
+{:paths ["src"]
+ :deps {integrant/integrant {:mvn/version "0.8.0"}
+        ring/ring-core {:mvn/version "1.8.1"}
+        ring/ring-jetty-adapter {:mvn/version "1.8.1"}
+        seancorfield/next.jdbc {:mvn/version "1.1.582"}
+        org.xerial/sqlite-jdbc {:mvn/version "3.32.3.2"}
+        metosin/reitit {:mvn/version "0.5.15"}}
+ :aliases {:dev {:extra-paths ["dev"]
+                 :extra-deps {integrant/repl {:mvn/version "0.3.1"}}}
+           :server {:main-opts ["-m" "system"]}}}
